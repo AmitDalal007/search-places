@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Search Places React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Search Places React App! This project allows users to search through places and view the results in a table format. The application is built using React.js and incorporates various functionalities such as searching, pagination, and setting limits for API data.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Follow these steps to get the project up and running on your local machine:
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, make sure you have Node.js and npm (Node Package Manager) installed on your system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/AmitDalal007/search-places.git
+    ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd search-places
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies for both the frontend and backend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. Start the frontend development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    This will launch the React development server. You can view the app by opening [http://localhost:3000](http://localhost:3000) in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the application is running locally, you can use the following features:
 
-## Learn More
+- **Search Box:** Enter your search query in the search box and press Enter to see the results in the table below. You can also use the keyboard shortcut Ctrl + / to focus on the search box.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Table:** View the search results displayed in a table format. The table includes columns for the serial number, place name, and country. If no results are found, the table will display "No result found".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Pagination:** Navigate through the search results using the pagination controls. The pagination buttons allow you to move between pages of search results.
 
-### Code Splitting
+- **Limit Input:** Set the limit for the number of items fetched from the server using the input box on the far right side. The default limit is 5, and the maximum limit is 10.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Additional Notes
 
-### Analyzing the Bundle Size
+- Make sure to set up your environment variables for API access. Refer to the `.env.example` file for guidance on configuring your environment variables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- This project uses the [wft-geo-db](https://rapidapi.com/wirefreethought/api/geodb-cities) API to fetch city data.
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you have any suggestions or find any issues, feel free to open an issue or submit a pull request.
